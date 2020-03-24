@@ -2134,7 +2134,7 @@ void jl_init_types(void) JL_GC_DISABLED
                             "ambig",
                             "resorted",
                             "specializations",
-                            "linearspecializations",
+                            "speckeyset",
                             "slot_syms",
                             "source",
                             "unspecialized",
@@ -2158,7 +2158,7 @@ void jl_init_types(void) JL_GC_DISABLED
                             jl_any_type, // Union{Vector, Nothing}
                             jl_any_type, // Union{Vector, Nothing}
                             jl_simplevector_type,
-                            jl_simplevector_type,
+                            jl_array_type,
                             jl_string_type,
                             jl_any_type,
                             jl_any_type, // jl_method_instance_type
