@@ -2704,7 +2704,7 @@ static jl_cgval_t emit_new_struct(jl_codectx_t &ctx, jl_value_t *ty, size_t narg
             if (lt->isVectorTy() || jl_is_vecelement_type(ty)) { // maybe also check the size ?
                 init_as_value = true;
             }
-            else if (tracked.count) {
+            else if (tracked.count == 0) {
                 init_as_value = true;
             }
 
